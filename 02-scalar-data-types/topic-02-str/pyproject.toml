@@ -1,5 +1,5 @@
 [project]
-name = "topic-01"
+name = "topic-02-str"
 version = "0.1.0"
 requires-python = "==3.14.3"
 dependencies = []
