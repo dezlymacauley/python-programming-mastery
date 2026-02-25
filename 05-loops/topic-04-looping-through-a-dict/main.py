@@ -60,6 +60,18 @@ def main():
    
     # SECTION: Printing out both the key and the value
 
+    for key in player_scores:
+        print(f"{key}: {player_scores[key]}")
+    # Dezly: 3782
+    # Tsunade: 7282
+    # Gojo: 2710
+    
+    print()
+
+    # _________________________________________________________________________
+   
+   # SECTION: Sorting a dictionary based on the highest value
+
 
 
     # _________________________________________________________________________
