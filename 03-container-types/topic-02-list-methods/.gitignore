@@ -1,0 +1,10 @@
+# The Python virtual environment
+# This is where uv will install the Python version required for the project
+# and the project dependencies
+.venv/
+
+# Used by ruff to speed up code formatting
+.ruff_cache/ 
+
+# Created by Python to speed up importing of modules
+__pycache__/
