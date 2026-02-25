@@ -86,12 +86,59 @@ def main():
     # The second last closing price is: 10
     # The third last closing price is: 15
 
-    print(
-        f"The last 3 closing_stock_prices are: {closing_stock_prices[-3:]}"
-    )
+    print(f"The last 3 closing_stock_prices are: {closing_stock_prices[-3:]}")
     # The last 3 closing_stock_prices are: [15, 10, 12]
 
     # _________________________________________________________________________
+
+    # SECTION: Another reverse index example
+
+    # I want to get the last 5 prices from a list,
+    # then the last 5 values before that,
+    # and finally the last 5 before after that.
+
+    # I want three separate lists
+
+    # A list of 20 prices
+    opening_stock_prices: list[int] = [
+        102,
+        14,
+        98,
+        20,
+        105,
+        110, # index -15 (start of prev_prev_5)
+        107,
+        115,
+        120,
+        118,
+        112, # index -10 (start of prev_5)
+        109,
+        125,
+        130,
+        145,
+        10, # index -5 (start of last 5)
+        7,
+        5,
+        14,
+        11 # index -1
+    ]
+
+    # start from index `-5` and give me all the other elements in the list
+    last_5 = opening_stock_prices[-5:]
+    print(f"last_10: {last_5}")
+    # last_10: [10, 7, 5, 14, 11]
+
+    # start from index `-10` to index `-5` (excluding index -5)
+    prev_5_before_that = opening_stock_prices[-10:-5]
+    print(f"prev_5_before_that: {prev_5_before_that}")
+    # prev_5_before_that: [112, 109, 125, 130, 145]
+
+    prev_prev_5_before_that = opening_stock_prices[-15:-10]
+    print(f"prev_prev_5_before_that: {prev_prev_5_before_that}")
+    # prev_prev_5_before_that: [110, 107, 115, 120, 118]
+
+
+# _________________________________________________________________________
 
 
 if __name__ == "__main__":
