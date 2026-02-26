@@ -1,5 +1,5 @@
 [project]
-name = "topic-04-looping-through-a-dict"
+name = "topic-01-datetime"
 version = "0.1.0"
 requires-python = "==3.14.3"
 dependencies = []
