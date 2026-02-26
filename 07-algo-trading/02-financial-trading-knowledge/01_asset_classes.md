@@ -12,6 +12,41 @@ Stocks can be purchased with cash or with another asset.
 
 _______________________________________________________________________________
 
+#### `long a stock`
+
+This means buying and holding onto a stock, in hopes that ther price goes up
+at a future date so that you can sell that stock at a profit.
+
+A profit is made if `current price > average price`
+
+_______________________________________________________________________________
+
+#### `short a stock`
+
+You borrow a stock from someone and then sell it on the market,
+in hopes that the price goes down so that 
+you can buy it back at a lower price.
+
+The borrowed stock needs to be returned to the entity that you borrowed from.
+
+A profit is made if `current price < average price`
+
+_______________________________________________________________________________
+
+#### Brokerage account types
+
+A brokerage is a company that lets you buy and sell financial assets.
+
+- Cash accounts (You can't borrow cash or stocks)
+1. Go long using your own money
+
+- Margin accounts (You can borrow cash and stocks):
+1. Go long using your own money
+2. Go long by borrowing funds from your brokerage
+3. Go short by borrowing shares from your brokerage to sell them
+
+_______________________________________________________________________________
+
 ### Chart period View
 
 Displays the open, high, low, close, volume of a specific period
