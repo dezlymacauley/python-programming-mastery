@@ -1,5 +1,71 @@
-# New Python Project Setup
+# Python Project Setup Guide
 _______________________________________________________________________________
+
+## Part 1: System Configuration
+
+### Update your path variable
+
+Add this line to your `.zprofile` file. This file is usually located at:
+`$HOME/.zprofile`
+
+```sh
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+This allows the shell access the binaries of Python packages 
+that were installed with the command:
+`uv tool install name-of-package`
+
+This is where executable binaries Python packages 
+from `https://pypi.org` will be placed.
+
+This allows the shell to access the binaries of globally installed Rust 
+packages.
+
+_______________________________________________________________________________
+
+### Restart your computer after updating the path variable
+_______________________________________________________________________________
+
+Install the interpreter for the Python programming language.
+
+```sh
+sudo pacman -S --needed python
+```
+
+Note: This should already by installed.
+
+_______________________________________________________________________________
+
+A Rust-powered version manager, and package manager for Python,
+that can also setup Python virtual environments
+```sh
+sudo pacman -S --needed uv
+```
+_______________________________________________________________________________
+
+A Rust-powered formatter for Python
+```sh
+uv tool install ty@latest
+```
+
+A Rust-powered language server for Python
+```sh
+uv tool install ruff@latest
+```
+
+_______________________________________________________________________________
+
+### Optional
+
+A cli tool for API testing
+It comes with two main commands `http` and `https`
+```sh
+uv tool install httpie@latest
+```
+_______________________________________________________________________________
+
+## Part 2: Project Configuration
 
 Create the directory
 ```sh
